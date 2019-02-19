@@ -5,10 +5,16 @@ function getMsgForm() {
     event.preventDefault()
   }
 
-
+  function activeDiv(){
+    const div = document.getElementById("fisrtTwt");
+    div.style.display = "block";
+    }
 
 
 // próximo passo
+
+var newYork = moment.tz("2014-06-01 12:00", "America/New_York");
+console.log(newYork)
 
 // var newParagraph = document.createElement('p');
 // var paragraphText = document.createTextNode('Novo parágrafo.');
