@@ -1,9 +1,12 @@
 
 function getMsgForm() {
-    const x = document.forms["tweetform"]["tweetmsg"].value;
-    document.getElementById("fisrtTwt").innerHTML = x;
+    const novaMensagem = document.forms["tweetform"]["tweetmsg"].value;
+    document.getElementById("fisrtTwt").innerHTML = novaMensagem;
+    document.forms["tweetform"]["tweetmsg"].value = '';
     event.preventDefault()
   }
+
+
 
   function activeDiv(){
     const div = document.getElementById("fisrtTwt");
@@ -11,10 +14,8 @@ function getMsgForm() {
     }
 
 
-// próximo passo
 
-var newYork = moment.tz("2014-06-01 12:00", "America/New_York");
-console.log(newYork)
+// próximo passo
 
 // var newParagraph = document.createElement('p');
 // var paragraphText = document.createTextNode('Novo parágrafo.');
@@ -26,3 +27,10 @@ console.log(newYork)
 
 // // Agora inserimos
 // container.insertBefore(newParagraph, secondParagraph);
+
+// function myFunction() {
+//     var x = document.createElement("INPUT");
+//     x.setAttribute("type", "text");
+//     x.setAttribute("value", "Hello World!");
+//     document.body.appendChild(x);
+//   }

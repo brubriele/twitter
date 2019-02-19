@@ -1,6 +1,10 @@
 /* header */
 
+/* nav */
 
+nav a {
+    text-decoration: none;
+}
 
 /* section links */
 
@@ -15,7 +19,24 @@ body, .left {
 
 form {
     display: flex;
+    width: 90%;
     flex-direction: column;
+  }
+
+  textarea {
+    display: block;
+    border-color: #CBEFFB;
+    border-radius: 5px;
+    border-width: 1px;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #EAF8FD;
+    border-radius: 5px;
+    padding: 1%;
   }
   
   .container {
@@ -43,19 +64,38 @@ form {
     display: inline-block;
     font-size: 16px;
   }
+
+  i {
+      color:#58CEF2;
+      padding: 15px;
+      font-size: 20px;
+
+  }
+
   
-  .posted p, .left, .right {
+  
+  .edit-postar p, .left, .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 20%;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 2px;
     background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     padding: 2px;
     margin: 10px;
     text-align: center;
+  }
+
+
+  .edit-postar {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    opacity: 0.7;
-    border-radius: 2px;
-    flex-basis: 30%;
+    flex-direction: column;
+  }
+
+  .edit-postar {
+      flex-basis: 80%;
   }

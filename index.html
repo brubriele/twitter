@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <script src="main.js"></script>
 </head>
@@ -30,21 +32,8 @@
         </nav>
 
         <section>
-            <div></div>
-            <div></div>
-        </section>
-
-
-        <section>
             <div><img class="perfil" src="" alt="" srcset=""></div>
-            <div class="form post">
-                <form name="tweetform" action="" method="GET">
-                    <textarea name="tweetmsg" id="" cols="30" rows="10"></textarea>
-                    <div class="btn post">
-                        <button type="button" onclick="getMsgForm(), activeDiv()" >tweet</button>
-                    </div>
-                </form>
-            </div>
+
         </section>
 
 
@@ -54,10 +43,27 @@
 
             </aside>
 
-            <section class="posted">
-                <p id="fisrtTwt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa minima magni optio
-                    numquam tenetur at
-                    provident excepturi sunt omnis consectetur esse corporis, sed sequi obcaecati eos ut sit alias unde.
+            <section class="edit-postar">
+                <div class="form post">
+                    <form name="tweetform" action="" method="GET">
+
+                        <textarea name="tweetmsg" id="" cols="30" rows="10"></textarea>
+
+                        <div class="btn post">
+                            <div class="btn post icons">
+                                <i class="far fa-image"></i>
+                                <i class="fas fa-chart-bar"></i>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+
+
+                            <button type="button" onclick="getMsgForm(), activeDiv()">Tweetar</button>
+                        </div>
+
+
+                    </form>
+                </div>
+                <p id="fisrtTwt">
                 </p>
             </section>
 
