@@ -110,6 +110,8 @@ form {
   }
 
   .edit-postar p {
+      flex-wrap: wrap;
+      flex-basis: 20%;
       margin: 0px;
   }
 
