@@ -1,5 +1,7 @@
 document.getElementById('btn').addEventListener('click', getMsgForm)
 document.getElementById('input').addEventListener('input', ableBtn)
+document.getElementById('input').addEventListener('input', contador)
+
 
 function getMsgForm() {
   const novaMensagem = document.forms["tweetform"]["tweetmsg"].value;
@@ -15,8 +17,8 @@ function getMsgForm() {
 
 function ableBtn() {
   const btn = document.getElementById('btn');
-  const input = document.getElementById('input');
-  if (input === '') {
+  const textArea = document.forms["tweetform"]["tweetmsg"].value;
+  if (textArea === '') {
     btn.disabled = true;
   } else {
     btn.disabled = false;
@@ -24,6 +26,11 @@ function ableBtn() {
 }
 
 
+function contador (){
+  const textArea = document.forms["tweetform"]["tweetmsg"].value;
+  let conta = 144 - textArea.length;
+  document.getElementById('contador').textContent = conta;
+}
 
 
 // próximo passo
