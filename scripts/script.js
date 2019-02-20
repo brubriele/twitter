@@ -1,17 +1,21 @@
-
 function getMsgForm() {
-    const novaMensagem = document.forms["tweetform"]["tweetmsg"].value;
-    document.getElementById("fisrtTwt").innerHTML = novaMensagem;
-    document.forms["tweetform"]["tweetmsg"].value = '';
-    event.preventDefault()
-  }
+  const novaMensagem = document.forms["tweetform"]["tweetmsg"].value;
+  let tweet = document.createElement('p');
+  let text = document.createTextNode(novaMensagem);
+  tweet.appendChild(text);
+  document.getElementById('mural').appendChild(tweet);
+  // document.getElementById("fisrtTwt").innerHTML = novaMensagem;
+  document.forms["tweetform"]["tweetmsg"].value = '';
+  event.preventDefault()
+}
 
 
 
-  function activeDiv(){
-    const div = document.getElementById("fisrtTwt");
-    div.style.display = "block";
-    }
+
+function activeDiv() {
+  const div = document.getElementById("fisrtTwt");
+  div.style.display = "block";
+}
 
 
 

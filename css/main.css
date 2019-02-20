@@ -57,7 +57,7 @@ form {
 }
   
   .container {
-  display: flex
+  display: flex;
   }
 
   .trio {
@@ -75,7 +75,7 @@ form {
     border-radius: 25px;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -108,6 +108,14 @@ form {
     margin: 0 5px;
     text-align: center;
   }
+
+  .left, .right {
+    width: 200px;
+    height: 200px;
+  }
+
+
+
 
   .edit-postar p {
       flex-wrap: wrap;
@@ -149,8 +157,7 @@ form {
       background-color: #2FC2EF;
       margin: 0px;
       width: 100%;
-      height: 50%;;
-
+      height: 50%;  
   }
 
   .left img {
