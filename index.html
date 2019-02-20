@@ -62,7 +62,7 @@
                 <div class="form post">
                     <form name="tweetform" action="" method="GET">
 
-                        <textarea name="tweetmsg" id="" cols="30" rows="10"
+                        <textarea id="input" name="tweetmsg" id="" cols="30" rows="10"
                             placeholder="O que está acontecendo?"></textarea>
 
                         <div class="btn post">
@@ -73,8 +73,10 @@
                             </div>
 
 
-                            <button type="button" onclick="getMsgForm(), activeDiv()">Tweetar</button>
+                            <button id="btn" type="button" disabled>Tweetar</button>
                         </div>
+
+                        <p id="contador"></p>
 
                         <section id="mural"></section>
 

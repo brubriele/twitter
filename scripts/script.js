@@ -1,3 +1,6 @@
+document.getElementById('btn').addEventListener('click', getMsgForm)
+document.getElementById('input').addEventListener('input', ableBtn)
+
 function getMsgForm() {
   const novaMensagem = document.forms["tweetform"]["tweetmsg"].value;
   let tweet = document.createElement('p');
@@ -10,12 +13,16 @@ function getMsgForm() {
 }
 
 
-
-
-function activeDiv() {
-  const div = document.getElementById("fisrtTwt");
-  div.style.display = "block";
+function ableBtn() {
+  const btn = document.getElementById('btn');
+  const input = document.getElementById('input');
+  if (input === '') {
+    btn.disabled = true;
+  } else {
+    btn.disabled = false;
+  }
 }
+
 
 
 
@@ -38,3 +45,12 @@ function activeDiv() {
 //     x.setAttribute("value", "Hello World!");
 //     document.body.appendChild(x);
 //   }
+
+
+// contador
+
+// function myFunction() {
+//   var x = document.getElementById("input").value;
+//   document.getElementById("contador").innerHTML = 144 - x;
+// }
+
