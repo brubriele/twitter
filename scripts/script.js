@@ -30,6 +30,16 @@ function contador (){
   const textArea = document.forms["tweetform"]["tweetmsg"].value;
   let conta = 144 - textArea.length;
   document.getElementById('contador').textContent = conta;
+
+  if (conta < 0) {
+    let negativeArea  =  document.getElementById('contador');
+    negativeArea.style.color = 'red';
+  } 
+  else if (conta >= 0) {
+    let negativeArea  =  document.getElementById('contador');
+    negativeArea.style.color = 'gray';
+  } 
+  
 }
 
 

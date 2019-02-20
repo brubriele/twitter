@@ -133,6 +133,7 @@ form {
     flex-direction: column;
     margin: 0 auto;
     flex-basis: 75%;
+    overflow: hidden;
   }
 
   ::placeholder {
@@ -142,6 +143,15 @@ form {
 
   textarea:focus::placeholder {
     color: #B2B8C6;
+  }
+
+  .contador {
+    position: absolute;
+    color: gray;
+    font-size: 15px;
+    font-weight: 100;
+    top:33%;
+    left: 79%;
   }
 
 
