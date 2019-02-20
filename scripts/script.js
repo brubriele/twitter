@@ -25,25 +25,51 @@ function ableBtn() {
   }
 }
 
-
-function contador (){
-  const textArea = document.forms["tweetform"]["tweetmsg"].value;
-  const btn = document.getElementById('btn');
-  let conta = 144 - textArea.length;
-  document.getElementById('contador').textContent = conta;
-
-  if (conta < 0) {
-    let negativeArea  =  document.getElementById('contador');
-    negativeArea.style.color = 'red';
-    btn.disabled = true;
-  } 
-  else if (conta >= 0) {
-    let negativeArea  =  document.getElementById('contador');
-    negativeArea.style.color = 'gray';
-  } 
+// function contador (){
+//     const textArea = document.forms["tweetform"]["tweetmsg"].value;
+//     const btn = document.getElementById('btn');
+//     let conta = 140 - textArea.length;
+//     document.getElementById('contador').textContent = conta;
   
-}
+//     if (conta < 0) {
+//       let negativeArea  =  document.getElementById('contador');
+//       negativeArea.style.color = 'red';
+//       btn.disabled = true;
+//     } 
+//     else if (conta >= 0) {
+//       let negativeArea  =  document.getElementById('contador');
+//       negativeArea.style.color = 'gray';
+//     } 
+    
+//   }
 
+  function contador (){
+    const textArea = document.forms["tweetform"]["tweetmsg"].value;
+    const btn = document.getElementById('btn');
+    let conta = 140 - textArea.length;
+    let negativeArea  =  document.getElementById('contador');
+    document.getElementById('contador').textContent = conta;
+  
+    if (conta < 0) {
+      negativeArea.style.color = 'red';
+      btn.disabled = true;
+    } 
+    else if (conta >= 10 && conta < 20) {
+      negativeArea.style.color = '#FFAD1F';
+    }
+    else if (conta < 10) {
+      negativeArea.style.color = '#E0245E';
+    }
+    else if (conta >= 0) {
+      negativeArea.style.color = 'gray';
+    } 
+  }
+
+
+//   Se você passar os 140 caracteres, desative o botão.
+// Se você passar os 120 caracteres, mostre o contador com outra cor.
+// Se você passar os 130 caracteres, mostre o contador com outra cor.
+// Se você passar os 140 caracteres, mostre o contador em negativo.
 
 // próximo passo
 
