@@ -28,12 +28,14 @@ function ableBtn() {
 
 function contador (){
   const textArea = document.forms["tweetform"]["tweetmsg"].value;
+  const btn = document.getElementById('btn');
   let conta = 144 - textArea.length;
   document.getElementById('contador').textContent = conta;
 
   if (conta < 0) {
     let negativeArea  =  document.getElementById('contador');
     negativeArea.style.color = 'red';
+    btn.disabled = true;
   } 
   else if (conta >= 0) {
     let negativeArea  =  document.getElementById('contador');
