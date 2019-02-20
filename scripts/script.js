@@ -22,6 +22,7 @@ function ableBtn() {
     btn.disabled = true;
   } else {
     btn.disabled = false;
+    btn.style.cursor = 'pointer';
   }
 }
 
@@ -53,6 +54,7 @@ function ableBtn() {
     if (conta < 0) {
       negativeArea.style.color = 'red';
       btn.disabled = true;
+      btn.style.cursor = 'not-allowed';
     } 
     else if (conta >= 10 && conta < 20) {
       negativeArea.style.color = '#FFAD1F';
