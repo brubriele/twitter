@@ -5,7 +5,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: o auto;
+  margin: 0 auto;
 }
 
 /* nav */
@@ -14,6 +14,16 @@ body{
     background-color: #E6ECF0;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+}
+
+.mural {
+  display: flex;
+  height: 50%;
+  flex-direction: column-reverse;
+}
+
+.mural * {
+  flex-basis: 40%;
 }
 
 
@@ -36,6 +46,7 @@ form {
     border-color: #CBEFFB;
     border-radius: 5px;
     border-width: 1px;
+    resize: none;
   }
 
   .busca input {
@@ -54,6 +65,11 @@ form {
     background-color: #EAF8FD;
     margin: 0px;
     padding: 1%;
+  }
+
+  .feed {
+    display: flex;
+    flex-direction: column;
   }
 
   nav {
@@ -151,7 +167,7 @@ form {
 
   
   
-  .edit-postar p, .left, .right {
+  .left, .right {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -174,13 +190,24 @@ form {
     width: 300px;
   }
 
-
+  ::placeholder {
+    color: #2FC2F2;
+    opacity: 1;
+  }
 
 
   .edit-postar p {
       flex-wrap: wrap;
       flex-basis: 20%;
       margin: 0px;
+      display: flex;
+    background-color: white;
+    opacity: 0.7;
+    background: white;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+    border-radius: 1px;
+    margin: 0 5px;
+    text-align: center;
   }
 
 
@@ -189,13 +216,10 @@ form {
     flex-direction: column;
     margin: 0 auto;
     flex-basis: 75%;
-    overflow: hidden;
+    /* overflow: auto; */
   }
 
-  ::placeholder {
-    color: #2FC2F2;
-    opacity: 1; /* Firefox */
-  }
+  
 
   textarea:focus::placeholder {
     color: #B2B8C6;
@@ -206,7 +230,7 @@ form {
     color: gray;
     font-size: 15px;
     font-weight: 100;
-    top: 29%;
+    top: 12%;
     left: 78%;
   }
 
