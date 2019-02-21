@@ -9,7 +9,6 @@ function getMsgForm() {
   let text = document.createTextNode(novaMensagem);
   tweet.appendChild(text);
   document.getElementById('mural').appendChild(tweet);
-  // document.getElementById("fisrtTwt").innerHTML = novaMensagem;
   document.forms["tweetform"]["tweetmsg"].value = '';
   event.preventDefault()
 }
@@ -25,24 +24,6 @@ function ableBtn() {
     btn.style.cursor = 'pointer';
   }
 }
-
-// function contador (){
-//     const textArea = document.forms["tweetform"]["tweetmsg"].value;
-//     const btn = document.getElementById('btn');
-//     let conta = 140 - textArea.length;
-//     document.getElementById('contador').textContent = conta;
-  
-//     if (conta < 0) {
-//       let negativeArea  =  document.getElementById('contador');
-//       negativeArea.style.color = 'red';
-//       btn.disabled = true;
-//     } 
-//     else if (conta >= 0) {
-//       let negativeArea  =  document.getElementById('contador');
-//       negativeArea.style.color = 'gray';
-//     } 
-    
-//   }
 
   function contador (){
     const textArea = document.forms["tweetform"]["tweetmsg"].value;
@@ -66,6 +47,19 @@ function ableBtn() {
       negativeArea.style.color = 'gray';
     } 
   }
+
+
+// Tentar implementar clone origem da div
+
+// // Get the last <li> element ("Milk") of <ul> with id="myList2"
+// var formOrigem = document.getElementById("formOrigin").firstChild;
+
+// // Copy the <li> element and its child nodes
+// var cln = formOrigem.cloneNode(true);
+
+// // Append the cloned <li> element to <ul> with id="myList1"
+// document.getElementById("formOrigin").replaceChild(cln);
+
 
 
 //   Se você passar os 140 caracteres, desative o botão.
