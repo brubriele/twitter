@@ -2,7 +2,7 @@
 
 ## Objetivos propostos
 
-Projeto apresentado ao Bootcamp Laboratoria em 21-02-2019. O objetivo do desafio consiste em exercitar interação de páginas com JS a partir do Document Object Model (DOM), com a finalidade de replicar o feed de postagens do Twitter.
+Projeto apresentado ao Bootcamp Laboratoria em 21-02-2019. O objetivo do desafio consiste em exercitar interação de páginas com JS a partir do Document Object Model (DOM) para replicar o feed de postagens do Twitter.
 
 ## Requisitos
 
