@@ -187,6 +187,7 @@ form {
   }
 
   .top, .trend {
+    display: flex;
     width: 300px;
   }
 
@@ -199,6 +200,7 @@ form {
   .edit-postar p {
       flex-wrap: wrap;
       flex-basis: 20%;
+      word-break: break-all;
       margin: 0px;
       display: flex;
     background-color: white;
@@ -209,6 +211,7 @@ form {
     margin: 0 5px;
     text-align: center;
   }
+
 
 
   .edit-postar {

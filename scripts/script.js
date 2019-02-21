@@ -2,7 +2,15 @@ document.getElementById('btn').addEventListener('click', getMsgForm)
 document.getElementById('input').addEventListener('input', ()=> {
   ableBtn();
   contador();
+  autoAjusteArea();
 })
+
+function autoAjusteArea() {
+  const area = document.getElementById('input').value;
+  area.style.height = 'auto';
+  area.style.height = area.scrollHeight + 'px';
+
+}
 
 function getMsgForm() {
   let horas = document.createElement('p');
@@ -12,12 +20,13 @@ function getMsgForm() {
   tweet.innerHTML = novaMensagem;
   document.getElementById('mural').appendChild(horas);
   document.getElementById('mural').appendChild(tweet);
+
+
   document.forms["tweetform"]["tweetmsg"].value = '';
-  event.preventDefault()
   btn.disabled = true;
+  btn.style.cursor = 'not-allowed';
+  event.preventDefault()
 }
-
-
 
 function ableBtn() {
   const btn = document.getElementById('btn');
