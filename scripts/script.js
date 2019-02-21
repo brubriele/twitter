@@ -5,10 +5,11 @@ document.getElementById('input').addEventListener('input', ()=> {
   autoAjusteArea();
 })
 
+
 function autoAjusteArea() {
-  const area = document.getElementById('input').value;
-  area.style.height = 'auto';
-  area.style.height = area.scrollHeight + 'px';
+  const area = document.getElementById('input');
+  area.style.height = '';
+  area.style.height = (area.scrollHeight + 100) + 'px';
 
 }
 
@@ -20,8 +21,6 @@ function getMsgForm() {
   tweet.innerHTML = novaMensagem;
   document.getElementById('mural').appendChild(horas);
   document.getElementById('mural').appendChild(tweet);
-
-
   document.forms["tweetform"]["tweetmsg"].value = '';
   btn.disabled = true;
   btn.style.cursor = 'not-allowed';
@@ -79,6 +78,6 @@ function ableBtn() {
     else if (horas < 10 && min < 10){
       horaFinal = horas + '0' + ":" + '0' + min;
     }
-    return horaFinal
+    return '(' + horaFinal + ')'
     }
 

@@ -1,4 +1,4 @@
-/* header */
+
 
 header {
   display: flex;
@@ -8,7 +8,6 @@ header {
   margin: 0 auto;
 }
 
-/* nav */
 
 body{
     background-color: #E6ECF0;
@@ -26,20 +25,11 @@ body{
   flex-basis: 40%;
 }
 
-
-/* section links */
-
-/* section form posts */
-
-/* section get posted */
-
-
-
-
 form {
   display: flex;
   width: 100%;
   flex-direction: column;
+  background-color: #EAF8FD;
   }
 
   textarea, .busca input {
@@ -47,6 +37,8 @@ form {
     border-radius: 5px;
     border-width: 1px;
     resize: none;
+    overflow:hidden;
+    overflow-wrap: break-word;
   }
 
   .busca input {
@@ -62,7 +54,6 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #EAF8FD;
     margin: 0px;
     padding: 1%;
   }
@@ -229,12 +220,12 @@ form {
   }
 
   .contador {
-    position: absolute;
+    position: relative;
     color: gray;
     font-size: 15px;
     font-weight: 100;
-    top: 12%;
-    left: 78%;
+    bottom: 19%;
+    left: 95%;
   }
 
 
